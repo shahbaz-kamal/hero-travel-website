@@ -1,8 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* shared styling starts */
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Mulish", sans-serif;
+}
+
+.display-flex {
+  display: flex;
+}
+.travel {
+  color: #ff5400;
+}
+.title {
+  font-weight: 800;
+}
+.regular {
+  font-weight: 400;
+}
+.container {
+  max-width: 1170px;
+}
+/* shared styling ends */
+
+/* header styling starts */
+/* navbar starts */
+
+.nav-bar {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+  /* margin-right: 44px; */
+}
+.list-container {
+  justify-content: space-evenly;
+  gap: 2.75rem;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #424247;
+  font-weight: 400;
+}
+.brand-logo {
+  font-size: 2.25rem;
+}
+.brand-logo img {
+  width: 48px;
+  height: 56px;
+  margin-right: 1rem;
+}
+.brand-logo > h3 {
+  color: #131318;
+}
+.hamburger {
+  display: none;
+}
+/* navbar ends */
+
+/* banner section starts */
+.explore-your-travel {
+  /* border: 2px solid red; */
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 16px;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8),
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.banner-content {
+  flex-direction: column;
+  /* max-width: 800px;
+  height: 288px;
+  border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+}
+.banner-description {
+  font-size: 1rem;
+  max-width: 676px;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+.inputs {
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: 4px;
+  display: flex;
+  gap: 24px;
+}
+input,
+select {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 16px;
+  font-size: 16px;
+}
+.btn-primary {
+  width: 174px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 35px;
+  color: #ffffff;
+  background-color: #ff5400;
+  border-radius: 8px;
+  border: none;
+}
+/* banner section ends */
+
+/* header styling ends */
+
+/* Responsive design */
+@media (max-width: 576px) {
+  /* navbar */
+  .nav-bar,
+  .container {
+    max-width: 335px;
+    margin-top: 19.2px;
+    margin-bottom: 17.8px;
+  }
+  .nav-options {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .brand-logo {
+    font-size: 21.56px;
+  }
+  .brand-logo img {
+    width: 28.72px;
+    height: 33.52px;
+  }
+  /* banner */
+  .banner-title {
+    font-size: 22px;
+  }
+  .banner-description {
+    font-size: 14px;
+    max-width: 304px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  select {
+    width: 255px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  .btn-primary {
+    width: 255px;
+    height: 52px;
+  }
 }
