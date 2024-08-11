@@ -25,6 +25,7 @@ body {
 .container {
   max-width: 1170px;
 }
+
 /* shared styling ends */
 
 /* header styling starts */
@@ -137,12 +138,34 @@ select {
   background-color: #ff5400;
   border-radius: 8px;
   border: none;
+  font-weight: 800;
 }
-/* banner section ends */
+.tour-description h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #131318;
+}
+.our-popular-tours li,
+p {
+  color: #131318;
+  font-weight: 400;
+}
+.tour-description ul {
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  max-width: 525px;
+}
+.description-2 {
+  max-width: 530px;
+  margin-bottom: 32px;
+}
+.our-popular-tours li {
+  /* margin: 0 auto; */
+  margin-bottom: 16px;
+  line-height: 26px;
+}
 
-/* header styling ends */
-
-/* Our popular tour starts */
 .our-popular-tours {
   margin: 0 auto;
   margin-top: 100px;
@@ -160,7 +183,71 @@ select {
   width: 100%;
   height: 100%;
 }
+.btn-popular-tours {
+  height: 52px;
+  width: 174px;
+  margin: 14px 35px;
+}
 /* Our popular tour ends */
+
+/* Destination starts */
+.your-destination {
+  margin: 0 auto;
+  margin-top: 74px;
+}
+
+.your-destination h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.destination-description {
+  text-align: center;
+  max-width: 643px;
+  font-weight: 400;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 74px;
+}
+.row-1,
+.row-2,
+.row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin: 1rem 0; */
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.row-2 {
+  grid-template-columns: 0.78fr 1fr 0.58fr;
+}
+.row-3 {
+  grid-template-columns: 0.7fr 1fr;
+}
+.row-1,
+.row-3 img {
+  width: 100%;
+  height: 300px;
+  filter: brightness(80%);
+}
+.row-2 img {
+  width: 100%;
+  height: 286px;
+  filter: brightness(80%);
+}
+.country-card {
+  position: relative;
+}
+.country {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 800;
+  transform: translate(-50%, -50%);
+}
+/* Destination Ends */
 
 /* Responsive design */
 @media (max-width: 576px) {
